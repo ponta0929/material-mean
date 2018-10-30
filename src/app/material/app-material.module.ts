@@ -1,15 +1,21 @@
 import { NgModule } from '@angular/core';
-//AngularMaterial
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations"
+import { CommonModule } from "@angular/common";
+//user
+import { AppMaterialRoutingModule } from "./app-material-routing.module";
+import { FormExampleComponent } from './form-example/form-example.component';
+
 //Datepicker
 import { MatDatepickerModule, MatNativeDateModule } from "@angular/material";
 
 
 @NgModule({
-  exports: [
-    BrowserAnimationsModule,
+  imports: [
+    CommonModule,
+    AppMaterialRoutingModule,
     MatDatepickerModule, MatNativeDateModule
   ],
-  declarations: []
+  declarations: [
+    FormExampleComponent
+  ],
 })
 export class AppMaterialModule { }
