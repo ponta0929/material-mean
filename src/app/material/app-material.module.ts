@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 //AngularMaterial
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations"
 //Datepicker
-import { MatDatepickerModule, MatInputModule, MatNativeDateModule } from "@angular/material";
+import { MatDatepickerModule, MatNativeDateModule } from "@angular/material";
 
 
 @NgModule({
   exports: [
     BrowserAnimationsModule,
-    MatDatepickerModule, MatInputModule, MatNativeDateModule
+    MatDatepickerModule, MatNativeDateModule
   ],
   declarations: []
 })
