@@ -5,11 +5,8 @@ import { AppWebrtcRoutingModule } from './app-webrtc-routing.module';
 import { MaterialExpModule } from './material-exp.module';
 
 //user service
-import { LoginConstService } from "./service/login-const.service";
 
 //user component
-import { LoginComponent } from './component/login/login.component';
-import { LoginDialogComponent } from './component/login-dialog/login-dialog.component';
 
 @NgModule({
   imports: [
@@ -18,11 +15,10 @@ import { LoginDialogComponent } from './component/login-dialog/login-dialog.comp
     MaterialExpModule
   ],
   declarations: [
-    LoginComponent,
-    LoginDialogComponent
   ],
   providers : [
-    LoginConstService
+  ],
+  entryComponents : [
   ]
 })
 export class AppWebrtcModule { }

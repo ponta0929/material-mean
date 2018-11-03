@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path : "", redirectTo : "material", pathMatch : "full" },
-  { path : "material", loadChildren: "./material/app-material.module#AppMaterialModule" },
+  { path : "", redirectTo : "login", pathMatch : "full" },
+  { path : "login", loadChildren: "./login-module/login.module#LoginModule" },
   { path : "webrtc", loadChildren: "./app-webrtc/app-webrtc.module#AppWebrtcModule" }
 ];
 
