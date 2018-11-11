@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 
 import { Router } from "@angular/router";
 import { MatDialogRef } from "@angular/material/dialog";
@@ -13,9 +13,13 @@ export class LoginDialogComponent implements OnInit {
   constructor(
     public matDialogRef : MatDialogRef<LoginDialogComponent>
     ,public route : Router
-  ) { }
+    ,private changeDetectorRef : ChangeDetectorRef
+  ) { 
+    //this.changeDetectorRef.detectChanges();
+  }
 
   ngOnInit() {
+
   }
 
   onClick(){

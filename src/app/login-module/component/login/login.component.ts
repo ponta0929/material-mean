@@ -17,21 +17,18 @@ const dialogConfig = {
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  loginService : LoginConstService
-  matDialog : MatDialog
   matDialogRef : MatDialogRef<LoginDialogComponent>
 
   constructor(
-    loginService : LoginConstService,
-    matDialog : MatDialog
+    public loginService : LoginConstService,
+    public matDialog : MatDialog
   ) {
-    this.loginService = loginService;
-    this.matDialog = matDialog;
   }
 
   ngOnInit() {
-    this.matDialogRef = this.matDialog.open(LoginDialogComponent, dialogConfig);
-    //aaa
+    setTimeout(()=>{
+      this.matDialogRef = this.matDialog.open(LoginDialogComponent, dialogConfig);
+    })
   }
 
 }

@@ -1,5 +1,17 @@
-<h2 mat-dialog-title>Delete all</h2>
-<mat-dialog-content>Are you sure?</mat-dialog-content>
+<h2 mat-dialog-title>ログインダイアログ</h2>
+<mat-dialog-content>
+    <p>
+        <mat-form-field class="full-example">
+            <input matInput placeholder="ユーザID">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <input matInput placeholder="パスワード" matAutosize="true">
+        </mat-form-field>
+    </p>
+</mat-dialog-content>
 <mat-dialog-actions>
-    <button mat-fab color="primary" (click)="onClick()">Primary</button>
+    <button mat-fab color="primary" (click)="onClick()">login</button>
+    <button mat-button [mat-dialog-close]="" cdkFocusInitial>Ok</button>
 </mat-dialog-actions>

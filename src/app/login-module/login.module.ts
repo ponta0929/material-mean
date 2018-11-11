@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { LoginRoutingModule } from './login-routing.module';
 import { MaterialExpModule } from './material-exp.module';
+import { MAT_DIALOG_DEFAULT_OPTIONS } from "@angular/material/dialog";
 
 //user service
 import { LoginConstService } from "./service/login-const.service";
@@ -22,7 +23,8 @@ import { LoginDialogComponent } from './component/login-dialog/login-dialog.comp
     LoginDialogComponent
   ],
   providers : [
-    LoginConstService
+    LoginConstService,
+    {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}
   ],
   entryComponents : [
     LoginDialogComponent
